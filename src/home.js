@@ -6,7 +6,7 @@ function home() {
 
     const summaryImage = document.createElement('img');
     summaryImage.id = 'homepage-image';
-    summaryImage.src = 'image/asian-food.jpg';
+    summaryImage.src = './image/asian-food.jpg';
     summaryImage.alt = 'asian-foods';
 
     const introduction = document.createElement('div');
