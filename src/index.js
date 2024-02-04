@@ -4,20 +4,22 @@ import menu from './menu';
 import contact from './contact';
 
 function navigate() {
+    const content = document.getElementById('content');
     const tabs = document.querySelectorAll('.tabs');
     tabs.forEach((tab) => {
         tab.addEventListener('click', (e) => {
             let tabToLoad = tab.id;
 
+            content.replaceChildren();
             switch (tabToLoad) {
                 case "menu":
-                    menu();
+                    content.appendChild(menu());
                     break;
                 case "home":
-                    home();
+                    content.appendChild(home());
                     break;
                 case "contact":
-                    contact();
+                    content.appendChild(contact());
                     break;
             }
         })

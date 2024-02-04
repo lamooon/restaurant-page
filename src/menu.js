@@ -19,6 +19,7 @@ function createMenu(name, price) {
 }
 
 function menu() {
+    console.log("I have been reached to menu");
     const main = document.createElement('div');
     main.classList.add('menu');
     const friedRice = createMenu("Fried rice", 9.99);

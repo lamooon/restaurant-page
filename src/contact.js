@@ -1,4 +1,5 @@
 function contact() {
+    console.log("I have been reached to contact");
     const contact = document.createElement('div');
     contact.classList.add('contact');
 

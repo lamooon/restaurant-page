@@ -1,6 +1,7 @@
 
 function home() {
 
+    console.log("I have been reached to home");
     const home = document.createElement('div');
     home.classList.add('home');
 
@@ -37,7 +38,6 @@ function home() {
     introduction.appendChild(openingHourContainer);
     home.appendChild(summaryImage);
     home.appendChild(introduction);
-
     return home;
 }
 
