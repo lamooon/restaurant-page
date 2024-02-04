@@ -26,6 +26,7 @@ function menu() {
     const sushi = createMenu("Sushi", 14.99);
     main.appendChild(friedRice);
     main.appendChild(pho);
+    main.appendChild(sushi);
 
     return main;
 }
