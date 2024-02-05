@@ -7,7 +7,7 @@ function navigate() {
     const content = document.getElementById('content');
     const tabs = document.querySelectorAll('.tabs');
     tabs.forEach((tab) => {
-        tab.addEventListener('click', (e) => {
+        tab.addEventListener('click', () => {
             let tabToLoad = tab.id;
 
             content.replaceChildren();
@@ -32,14 +32,17 @@ function footer() {
 
     const copyright = document.createElement('p');
     copyright.textContent = `© ${new Date().getFullYear()} lamooon`;
+    footer.appendChild(copyright);
     return footer;
 }
 
 function homePage() {
     const content = document.getElementById('content');
-    navigate();
+
+    content.appendChild(home());
     content.appendChild(footer());
-    home();
+    navigate();
+
 
     return content;
 }

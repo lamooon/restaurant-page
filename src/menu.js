@@ -1,5 +1,6 @@
 function createMenu(name, price) {
     const item = document.createElement('div');
+    item.classList.add('item');
 
     const title = document.createElement('h2');
     title.textContent = name;

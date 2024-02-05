@@ -5,7 +5,7 @@ function contact() {
 
     const phoneNum = document.createElement('p');
     phoneNum.classList.add('contact-info');
-    phoneNum.textContent = '📞(+672) 7777 7777';
+    phoneNum.textContent = '📞  (+672) 7777 7777';
 
     const location = document.createElement('img');
     location.src = 'image/antarctica.png';
